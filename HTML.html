@@ -1,0 +1,84 @@
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="Styles/htmlStyle.css">
+	<script type="text/javascript" src="Scripts/htmlJS.js"></script>
+	
+	<!--CodeMirror-->
+	<link rel=stylesheet href="codemirror-4.11/lib/codemirror.css">
+	<script src="codemirror-4.11/lib/codemirror.js"></script>
+	<script src="codemirror-4.11/mode/xml/xml.js"></script>
+	<script src="doc/activebookmark.js"></script>
+
+	<title>Write HTML</title>
+</head>
+<body>
+	<table id="buttonTable" cellspacing="0" cellpadding="0">
+        <tr>
+            <td id="leftButtonContainer">
+                <div id="leftButtons">
+                    <div id="topLeft" style="display: inline-block">
+                        <div id="backButton">
+                            <a id="backText" href="Select.html">Back</a>
+                        </div>
+                        <h1 id="welcomeText">Welcome,</h1>
+                    </div>
+                    <div id="showme">
+                        <div id="showmeButton">
+                            <input id="showmeText" type="button" value="Show Me" onclick="openIframe()" />
+                        </div>
+                        <div id="loadButton">
+                            <input id="loadText" type="button" value="Load" onclick="openLogin()" />
+                        </div>
+                    </div>
+                </div>
+            </td>
+            <td id="logoContainer">
+                <a href="http://www.schoolarchimedes.dyndns.org"><img id="logoImg" src="Assets/logo2.png" alt="Archimedes Logo"></a>
+            </td>
+            <td id="rightButtonContainer">
+                <div id="rightButtons">
+                    <div style="float:right;">
+                        <input id="browserButton" type="image" src="Assets/courses/ielogo.png" alt="IE Logo" onclick="openInNewWindow()">
+                        <div id="saveButton">
+                            <input id="saveText" type="button" value="Save"/>
+                        </div>
+                        <div id="legend">
+                            <p><font color="#f9b129">Load</font><font color="#81b93c">: Load your work into the left box</font></p>
+                            <p><font color="#f9b129">Save</font><font color="#81b93c">: Save what you've typed in the left box</font></p>
+                            <p><font color="#f9b129">Show Me</font><font color="#81b93c">: Display your page in the right box</font></p>
+                            <img id="legendIE" src="Assets/courses/ielogo.png" alt="IE Logo"><p><font color="#81b93c">: Display your page in a new tab</font></p>
+                        </div>
+                    </div>
+                </div>
+            </td>
+        </tr>
+	</table>
+	<table id="boxTable" cellspacing="0" cellpadding="0">
+        <tr>
+            <td>
+                <div id="codeContainer" class="container">
+                    <textarea id="code"></textarea>
+                </div>
+            </td>
+            <td>
+                <div id="outputContainer" class="container">
+                    <iframe id="outputIframe"></iframe>
+                    <script>var editor = CodeMirror.fromTextArea(document.getElementById("code"), { lineNumbers: true, lineWrapping: true });</script>
+                </div>
+            </td>
+        </tr>
+	</table>
+	<form id="loginForm" action="" method="post">
+		<div id="loginWindow">
+			<p class="signInText">Username</p>
+			<button id="cancelLogin" type="button" onclick="openLogin()">X</button>
+			<input type="text" name="username" id="username" required="required" />
+			<p class="signInText">Password</p>
+            <input type="password" name="password" id="password" required="required" />
+            <p class="signInText">File Name</p>
+            <input type="text" name="filename" id="filename" required="required" />
+            <input type="submit" value="Ok" id="submit" />
+        </div>
+	</form>
+</body>
+</html>

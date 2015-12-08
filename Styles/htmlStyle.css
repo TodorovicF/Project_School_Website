@@ -1,0 +1,357 @@
+body {
+	background-image: url(../Assets/background2b.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+/*Table layouts*/
+#buttonTable {
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+#boxTable {
+	margin: auto;
+	width: 100%;
+}
+
+#rightButtonContainer, #leftButtonContainer  {
+	width: 850px;
+	position: relative;
+}
+
+#logoContainer {
+	text-align: center;
+}
+
+/*Individual button layouts*/
+#logoImg { 
+	width: 200px;
+	border-radius: 25px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	box-shadow: 0px 0px 10px rgba(0,0,0, 0.5);
+}
+
+#topLeft { position: absolute; top: 0; }
+
+/*Individual Button Styles and Animations*/
+/*Back Button*/
+#backButton { 
+    height: 45px;
+    float: left;  
+    margin-left: 10px; 
+    margin-top: 10px;
+	background-color: #f9b129;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #235997;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#backText {
+    padding: 5px;
+    margin: auto 0;
+    text-shadow: 0px 1px 1px black;
+    border: none;
+    background: none;
+    font-size: 35px;
+	color: #235997;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+	font-family: "Arial Rounded MT";
+}
+
+#backButton:hover {
+    background-color: #ffdea0;
+}
+
+/*Show Me Button*/
+#showmeButton { 
+	background-color: #235997;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f9b129;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#showmeText {
+    margin: auto 0;
+    text-shadow: 0px 1px 1px black;
+    border: none;
+    background: none;
+    font-size: 35px;
+	color: #f9b129;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+	font-family: "Arial Rounded MT";
+}
+
+#showmeButton:hover {
+    background-color: #3e78bb;
+}
+
+/*Load Button*/
+#loadButton { 
+	background-color: #235997;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f9b129;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#loadText {
+    margin: auto 0;
+    text-shadow: 0px 1px 1px black;
+    border: none;
+    background: none;
+    font-size: 35px;
+	color: #f9b129;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+	font-family: "Arial Rounded MT";
+}
+
+#loadButton:hover {
+    background-color: #3e78bb;
+}
+
+/*Filename Container*/
+#filenameContainer { 
+	background-color: #235997;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f9b129;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#filenameInput {
+    border-radius: 10px;
+    padding-left: 10px;
+    outline: none;
+    text-decoration: none;
+}
+
+/*Save Button*/
+#saveButton { 
+	background-color: #235997;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f9b129;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#saveText {
+    margin: auto 0;
+    text-shadow: 0px 1px 1px black;
+    border: none;
+    background: none;
+    font-size: 35px;
+	color: #f9b129;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+	font-family: "Arial Rounded MT";
+}
+
+#saveButton:hover {
+    background-color: #3e78bb;
+}
+
+/*Browser Button*/
+#browserButton { 
+    height: 50px;
+	background-color: #235997;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #f9b129;
+	border-radius: 15px;
+    box-shadow: 0px 1px 1px black;
+    transition: background-color 0.5s ease;
+}
+
+#browserButton:hover {
+    background-color: #3e78bb;
+}
+
+/*Legend*/
+#legend {
+    background-color: #235997;
+    position: absolute;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    top: 0;
+    right: 0;
+    height: 160px;
+    width: 450px;
+    border-left: 5px solid #f9b129;
+    border-bottom: 5px solid #f9b129;
+    border-bottom-left-radius: 25px;
+    box-shadow: -1px 1px 1px black;
+    font-family: "Arial Rounded MT";
+    font-size: 18px;
+}
+
+#legendIE {
+    float: left;
+    height:40px;
+    position:relative;
+    bottom: 15;
+}
+
+/*Button Positions*/
+#saveButton { position: absolute; bottom:100px; left: 10px; }
+
+#browserButton { position: absolute; bottom:10px; left: 40%; }
+
+#loadButton { position: absolute; bottom:100px; right: 10px; }
+
+#showmeButton { position: absolute; bottom:10px; left: 42%; }
+
+#filenameContainer { position: absolute; bottom: 100px; left: 35%; }
+
+/*Welcome*/
+#welcomeText {
+	font-family: "Arial Rounded MT";
+	color: #81B93C;
+	float: left;
+	display: none;
+}
+
+/*CodeOutput container layouts*/
+#codeContainer {
+	height: 840px;
+	width: 900px;
+	background-color: #D7D7D7;
+	border-radius: 40px;
+	border-style: solid;
+	border-width: 5;
+	border-color: #81B93C;
+	box-shadow: 3px 3px 2px rgba(0,0,0, 0.5);
+	position: absolute;
+	left: 25px;
+}
+
+#outputContainer {
+	height:840px;
+	width: 900px;
+	background-color: #D7D7D7;
+	border-radius: 40px;
+	border-style: solid;
+	border-width: 5;
+	border-color: #81B93C;
+	overflow: auto;
+	background-color: white;
+	box-shadow: -3px 3px 2px rgba(0,0,0, 0.5);
+	position: absolute;
+	right: 25px;
+}
+
+#outputIframe {
+	width: 99%;
+	height: 99%;
+	border: hidden;
+}
+
+/*Login Window*/ 
+#loginWindow {
+	width: 500px;
+	height: 360px;
+	background-color: #235997;
+	box-shadow: 0px 0px 15px rgba(0,0,0, 0.5);
+	border-radius: 25px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #81B93C;
+	position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+	padding: 20px;
+}
+
+#loginForm {
+	visibility: hidden;
+}
+
+.signInText {
+	font-family: "Arial Rounded MT";
+	color: #F9B129;
+	font-size: 35px;
+	line-height: 0%;
+	margin-top: 26px;
+	margin-bottom: 25px;
+}
+
+input[type="text"], input[type="password"] {
+	font-size: 25px;
+	font-family: "Arial Rounded MT";
+}
+
+#username, #password, #filename {
+	border-radius: 15px;
+	height: 50px;
+	width: 100%;
+	margin: auto;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #81B93C;
+}
+
+#submit {
+	font-size: 35px;
+	color: #F9B129;
+	font-family: "Arial Rounded MT";
+	background-color: white;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #81B93C;
+	border-radius: 15px;
+	position: absolute;
+	right: 15px;
+	bottom: 15px;
+}
+
+#cancelLogin {
+	font-size: 35px;
+	color: #F9B129;
+	font-family: "Arial Rounded MT";
+	background-color: white;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #81B93C;
+	border-radius: 15px;
+	position: absolute;
+	width: 45px;
+	height: 45px;
+	right: 15px;
+	top: 15px;
+}
+
+/*CodeMirror Styles*/
+.CodeMirror {
+	height: 100%;
+	font-size: 15px;
+	font-family: monospace;
+	border-radius: 35px;
+ }
